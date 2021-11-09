@@ -3,13 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Always include this line of code! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Travel With Me</title>
-    <link rel="stylesheet" href="07-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queries.css" />
   </head>
+
   <body>
-    <header class="header">
-      <p class="logo">Logo Here</p>
+    <header class="header nav-open">
+      <p class="logo active">Logo Here</p>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Section 1</a></li>
@@ -19,6 +32,19 @@
           <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <i
+          id="menu"
+          class="fas fa-bars icon-mobile-nav"
+          name="menu-outline"
+        ></i>
+        <i
+          id="close"
+          class="fas fa-times icon-mobile-nav"
+          name="close-outline"
+        ></i>
+      </button>
     </header>
 
     <main>
@@ -74,5 +100,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
