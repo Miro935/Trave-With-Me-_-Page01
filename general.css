@@ -136,7 +136,6 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  position: relative;
   /* Because we want theader to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
@@ -195,7 +194,7 @@ body {
 }
 
 /* MOBILE */
-.btn-mobile-nav {
+.icon-nav {
   display: none;
   border: none;
 
@@ -203,15 +202,11 @@ body {
   cursor: pointer;
 }
 
-.icon-mobile-nav {
+.icon-nav .fa-bars {
   height: 4.8rem;
   width: 4.8rem;
 
   color: #333;
-}
-
-.icon-mobile-nav[name='close-outline'] {
-  display: none;
 }
 
 /*********************/
