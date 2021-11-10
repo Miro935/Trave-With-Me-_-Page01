@@ -16,26 +16,31 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="queries8.css" />
   </head>
 
   <body>
-    <header class="header open-nav">
-      <p class="logo active">Logo Here</p>
-      <nav id="Topnav" class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section 1</a></li>
-          <li><a class="main-nav-link" href="#">Section 2</a></li>
-          <li><a class="main-nav-link" href="#">Section 3</a></li>
-          <li><a class="main-nav-link" href="#">Section 4</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
-        </ul>
-      </nav>
-
-      <button class="icon-nav" href="javascript:void(0)" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </button>
+    <header class="header">
+      <div class="top-bar__row">
+        <div class="col logo">
+          <p>Travel More</p>
+        </div>
+        <nav id="Topnav" class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">Section 1</a></li>
+            <li><a class="main-nav-link" href="#">Section 2</a></li>
+            <li><a class="main-nav-link" href="#">Section 3</a></li>
+            <li><a class="main-nav-link" href="#">Section 4</a></li>
+            <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
+          </ul>
+        </nav>
+        <div class="col btn-menu">
+          <button class="icon-nav" href="#">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -48,10 +53,13 @@
               getting to my destination. Over time, I've learned to let that go
               and just enjoy the ride.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm">
-              Start travelling now
-            </a>
-            <a href="#" class="btn btn--outline"> Travel more &darr; </a>
+
+            <div class="main-button">
+              <a href="#" class="btn btn--full margin-right-sm">
+                Travelling now
+              </a>
+              <a href="#" class="btn btn--outline"> Travel More &darr; </a>
+            </div>
 
             <div class="delivered-users">
               <div class="delivered-imgs">
@@ -91,7 +99,5 @@
         </div>
       </section>
     </main>
-
-    <script src="Script.js"></script>
   </body>
 </html>

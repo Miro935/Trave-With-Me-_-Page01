@@ -1,0 +1,34 @@
+/*** Responsive ***/
+/* rem and em do NOT depend on html font-size in media queries
+Instead, 1rem = 1 rem = 16px */
+
+/*********************/
+/* Desktop 1024x (min-width) */
+/********************/
+
+@media (min-width: 1024px) {
+  html {
+    /* 10px / 16px = 0.625 = 62.5% */
+    font-size: 62.5%;
+  }
+  /* Display Navigation on Top bar */
+
+  #Topnav {
+    display: block;
+  }
+  .icon-nav {
+    display: none;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 130rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+}
