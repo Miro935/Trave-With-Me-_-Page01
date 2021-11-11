@@ -5,17 +5,17 @@ Instead, 1rem = 1 rem = 16px */
 /*********************/
 /* Desktop 1024x (min-width) */
 /********************/
-
 @media (min-width: 1024px) {
   html {
     /* 10px / 16px = 0.625 = 62.5% */
     font-size: 62.5%;
   }
-  /* Display Navigation on Top bar */
 
+  /* Display Navigation on Top bar */
   #Topnav {
     display: block;
   }
+
   .icon-nav {
     display: none;
   }
@@ -30,5 +30,37 @@ Instead, 1rem = 1 rem = 16px */
     max-width: 130rem;
     padding: 0 3.2rem;
     margin: 0 auto;
+  }
+
+  .cities-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+
+    max-width: 130rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 8rem;
+    font-size: 4.4rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    /* 10px / 16px = 0.625 = 62.5% */
+    font-size: 62.5%;
+  }
+  .cities-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.8rem;
+    row-gap: 3.2rem;
+  }
+
+  .todo-list {
+    grid-column: 1 / -1;
+    justify-self: center;
   }
 }

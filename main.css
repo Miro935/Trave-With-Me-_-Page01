@@ -72,7 +72,9 @@ body {
 /*  GENERAL REUSABLE COMPONENTS */
 /*********************/
 
-.heading-primary {
+.heading-primary,
+.heading-secondary,
+.heading-list {
   margin-bottom: 3.2rem;
 
   color: #333;
@@ -226,7 +228,6 @@ body {
 }
 
 .hero {
-  max-width: 1023px;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
@@ -284,4 +285,99 @@ body {
 .delivered-text span {
   color: #cf711f;
   font-weight: bolder;
+}
+
+/*********************/
+/* CITIES SECTION */
+/********************/
+
+.section-cities {
+  padding: 9.6rem 0;
+}
+
+.container {
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.cities-text,
+.cities-main,
+.cities-more {
+  width: 100%;
+  text-align: center;
+}
+
+.sub-heading {
+  display: block;
+  margin-bottom: 1.6rem;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+
+  color: #cf711f;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 4.8rem;
+}
+
+.cities-main {
+  margin-bottom: 4.8rem;
+}
+
+.locals {
+  margin-bottom: 4.8rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.locals:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.locals img {
+  width: 80%;
+}
+
+.locals p {
+  font-size: 3.2rem;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+.heading-list {
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+
+  font-size: 2.4rem;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.cities-more {
+  font-size: 1.8rem;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+
+  color: #e67e22;
+
+  text-decoration: none;
+  transition: all 0.3s;
 }
